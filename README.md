@@ -83,7 +83,7 @@
    
 
     let your_array = [];
-
+    ## Save Data with Table List
     $(document).on('click', '#SaveBtn', function () {
 
         var tableData = [];
@@ -112,7 +112,7 @@
         var id = $(this).attr('id');
         console.log(value + " " + id);
     });
-
+    ## Remopve Data with Table List
     $('#tbody').on('click', '.remove', function () {
 
         // Getting all the rows next to the row

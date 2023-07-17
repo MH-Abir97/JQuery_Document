@@ -138,8 +138,9 @@
 
 ## Select 2 HTML
 
- <div class="row">
-        <div class="col-md-3">
+
+         
+
             <div class="form-group">
                 <select class="form-control select2" id="GetById">
                    <option value="0">--Select-- </option>
@@ -150,8 +151,7 @@
                 </select>
 
             </div>
-        </div>
-    </div>
+      
 
 
     ## JS

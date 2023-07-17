@@ -136,6 +136,80 @@
 });
 
 
+///Select 2 HTML
+ <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <select class="form-control select2" id="GetById">
+                   <option value="0">--Select-- </option>
+                    @*<option value="0">--Select-- </option>
+                    <option value="1">One </option>
+                    <option value="2">Two </option>
+                    <option value="3">Three </option>*@
+                </select>
+
+            </div>
+        </div>
+    </div>
+
+
+    ## JS
+
+     /// Select2 Data Load for Dropdown
+        results= [
+            {
+                "id": 1,
+                "text": "Option 1"
+            },
+            {
+                "id": 2,
+                "text": "Option 2"
+            }
+        ]
+    
+    /// Select2 Data Load for list Call
+    $(".select2").select2({
+     
+        placeholder: 'Select an option',
+        data: results,
+        // ajax:{
+        //    url: '',
+        //    method: 'GET',
+        //    dataType: 'json',
+        //    success: function (response) {
+        //       // $('#data-container').html(response.data);
+        //    },
+        //    error: function (xhr, status, error) {
+        //        console.log('AJAX request error:'+ error);
+        //    }
+        //}
+
+           
+        
+    })
+
+    /// Select2 Data Load for Onchange 
+
+    $('.select2').on('change', function () {
+        var selectedValue = $(this).val();
+        console.log('Selected value:', selectedValue);
+         // ajax:{
+        //    url: '',
+        //    method: 'GET',
+        //    dataType: 'json',
+        //    success: function (response) {
+        //       // $('#data-container').html(response.data);
+        //    },
+        //    error: function (xhr, status, error) {
+        //        console.log('AJAX request error:'+ error);
+        //    }
+        //}
+        // Perform your desired action based on the selected value
+        // For example, update other elements, make an AJAX request, etc.
+    });
+
+
+
 
 
 

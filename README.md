@@ -135,11 +135,10 @@
        
     });
 });
-
 ```
 
-## Select 2 HTML
 
+## Select 2 HTML
 
          
 ```
@@ -156,9 +155,9 @@
       
 
 ```
+    ## JS
 
 ```
-    ## JS
 
      /// Select2 Data Load for Dropdown
         results= [
@@ -212,7 +211,6 @@
         // Perform your desired action based on the selected value
         // For example, update other elements, make an AJAX request, etc.
     });
-
 
 ```
 

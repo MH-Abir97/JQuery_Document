@@ -136,16 +136,16 @@
 });
 
 
-///Select 2 HTML
+## Select 2 HTML
  <div class="row">
         <div class="col-md-3">
             <div class="form-group">
                 <select class="form-control select2" id="GetById">
                    <option value="0">--Select-- </option>
-                    @*<option value="0">--Select-- </option>
+                    <option value="0">--Select-- </option>
                     <option value="1">One </option>
                     <option value="2">Two </option>
-                    <option value="3">Three </option>*@
+                    <option value="3">Three </option>
                 </select>
 
             </div>

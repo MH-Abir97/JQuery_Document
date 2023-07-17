@@ -1,4 +1,5 @@
 # JQuery Necessary Document :
+```
 <div class="row">
         <div class="col-md-4">
             <div class="form-group">
@@ -38,7 +39,8 @@
            
         </div>
     </div>
-
+```
+```
 
     $(document).ready(function () {
     var arrayList = [];
@@ -75,12 +77,11 @@
                    $('#tbody').append(tbody);
         });
 
-
-     
-      
     });
 
-   
+```
+
+   ````
 
     let your_array = [];
     ## Save Data with Table List
@@ -135,12 +136,13 @@
     });
 });
 
+```
 
 ## Select 2 HTML
 
 
          
-
+```
             <div class="form-group">
                 <select class="form-control select2" id="GetById">
                    <option value="0">--Select-- </option>
@@ -153,7 +155,9 @@
             </div>
       
 
+```
 
+```
     ## JS
 
      /// Select2 Data Load for Dropdown
@@ -210,7 +214,7 @@
     });
 
 
-
+```
 
 
 

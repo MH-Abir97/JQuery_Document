@@ -56,25 +56,7 @@
      
         arrayList.push(obj);
         TempList.push(obj);
-     //  var resultstring=""
-
-
-        //for (i = 0; i < arrayList.length; i++) {
-        //    $('#TableId').append('<td>' + arrayList[i].UserName + '</td>');
-        //}
-
-        //for (var j = 0; j < arrayList.length; j++) {
-        //    resultstring += '<td></br>' + arrayList[j].UserName + '</td></br>';
-        //}
-        //$('#TableId').append(resultstring);
-
-
-       // $('#TableId').append('</table>');
-        //var rowIdx = 0;
-        //for (var i = 0; i < arrayList.length; i++) {
-           
-        //}
-
+    
        
         $.each(arrayList, function (key, value) {
             var tbody = `<tr> 
@@ -91,16 +73,6 @@
                     </tr>`;
 
                    $('#tbody').append(tbody);
-
-            //$('#tbody').append(`<tr>
-            // <td class="row-index text-center">
-            //  ${value.UserName}
-            // </td>
-            //  <td class="text-center">
-            //    <button class="btn btn-danger remove"
-            //      type="button" id='${value.Index}' >Remove</button>
-            //    </td>
-            //  </tr>`);
         });
 
 
@@ -135,45 +107,6 @@
       
     });
 
-
-    //$("#SaveBtn").click(function (e) {
-    //    e.preventDefault();
-
-    //    TempList.forEach(function (aData) {
-    //        console.log(aData);
-    //    });
-    //})
-
-    //$(".remove").click(function (e) {
-    //    e.preventDefault();
-    //    var child = $(this).closest('tr').nextAll();
-    //    var id = $(this).attr('id');
-    //})
-
-    // Denotes total number of rows
-   // var rowIdx = 0;
-
-    // jQuery button click event to add a row
-    //$('#addBtn').on('click', function () {
-
-    //    // Adding a row inside the tbody.
-    //    $('#tbody').append(`<tr id="R${++rowIdx}">
-    //         <td class="row-index text-center">
-    //         Row ${rowIdx}
-    //         </td>
-    //          <td class="text-center">
-    //            <button class="btn btn-danger remove"
-    //              type="button" id='${rowIdx}' >Remove</button>
-    //            </td>
-    //          </tr>`);
-    //});
-
-    // jQuery button click event to remove a row.
-    //$('.tbodyValue').on('change', '.PasswordId', function () {
-      
-
-    //});
-
     $(".PasswordId").change(function () {
         var value = $(this).val();
         var id = $(this).attr('id');
@@ -187,10 +120,7 @@
 
         var child = $(this).closest('tr').nextAll();
         var id = $(this).attr('id');
-        var temp = Number(id);
-
-       
-     
+        var temp = Number(id);   
         // Remove Form List=====>>>
 
         var list = TempList.filter((aData) => aData.Index == temp);
@@ -202,34 +132,6 @@
             }
         }
        
-
-    
-
-        // Iterating across all the rows 
-        // obtained to change the index
-        //child.each(function () {
-
-        //    // Getting <tr> id.
-        //    var id = $(this).attr('id');
-
-        //    // Getting the <p> inside the .row-index class.
-        //    var idx = $(this).children('.row-index').children('p');
-
-        //    // Gets the row number from <tr> id.
-        //    var dig = parseInt(id.substring(1));
-
-        //    // Modifying row index.
-        //    idx.html(`Row ${dig - 1}`);
-
-        //    // Modifying row id.
-        //    $(this).attr('id', `R${dig - 1}`);
-        //});
-
-        // Removing the current row.
-          $(this).closest('tr').remove();
-
-        // Decreasing total number of rows by 1.
-       // rowIdx--;
     });
 });
 
